@@ -33,6 +33,7 @@ private:
     std::vector<std::string> messagesHistory;
     std::mutex historyMutex;
     
+    bool sendAll(int clientSocket, const char* data, size_t length);
     void acceptConnections();
     void handleClient(int clientSocket);
     bool performHandshake(int clientSocket);
