@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Чат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h1>WebSocket Чат</h1>
+            <div class="status" id="status">Отключено</div>
+        </div>
+        
+        <div class="messages" id="messages"></div>
+        
+        <div class="input-area">
+            <input type="text" id="username" placeholder="Ваше имя" maxlength="20">
+            <input type="text" id="messageInput" placeholder="Введите сообщение..." disabled>
+            <button id="sendButton" disabled>Отправить</button>
+        </div>
+    </div>
+    
+    <script src="chat.js"></script>
+</body>
+</html>
